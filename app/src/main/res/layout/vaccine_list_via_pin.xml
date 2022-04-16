@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout2">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/block_name"
+        android:text="Block Name"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_my_location_24"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:id="@+id/centre_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/block_name"
+        android:text="Center Name"
+        android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+        android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/centre_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:padding="5dp"
+        android:text="Center Address"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        android:drawablePadding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/centre_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vaccine_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Vaccine Name"
+            android:drawableLeft="@drawable/ic_baseline_design_services_24"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/vaccine_charge"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="fee"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dose1_availability"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Dose 1"
+            android:drawableLeft="@drawable/ic_baseline_design_services_24"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/dose2_availability"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Dose 1"
+            android:drawableLeft="@drawable/ic_baseline_design_services_24"
+            android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

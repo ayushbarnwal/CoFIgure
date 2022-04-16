@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/state_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATE NAME"
+        android:paddingTop="18dp"
+        android:paddingRight="18dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/last_updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:layout_toRightOf="@+id/state_name"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/last_updated_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12hrs"
+        android:layout_toRightOf="@+id/last_updated"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/confirmed_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ConfirmedCases"
+        android:layout_below="@+id/state_name"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/confirmed_cases_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmed_cases"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:paddingTop="5dp"
+        android:text="234"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/discharged_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DischargedCases"
+        android:layout_below="@+id/state_name"
+        android:layout_toRightOf="@+id/confirmed_cases"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/discharged_cases_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discharged_cases"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/confirmed_cases_value"
+        android:paddingTop="5dp"
+        android:text="234"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/death_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deaths"
+        android:layout_below="@+id/state_name"
+        android:layout_toRightOf="@+id/discharged_cases"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/death_cases_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discharged_cases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/discharged_cases_value"
+        android:paddingTop="5dp"
+        android:text="234"
+        android:textSize="16dp" />
+
+</RelativeLayout>
