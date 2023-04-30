@@ -117,7 +117,8 @@ public class SlotViaDistrictActivity extends AppCompatActivity implements DatePi
 
                         }
                     });
-                } catch (JSONException jsonException) {
+                }
+                catch (JSONException jsonException) {
                     jsonException.printStackTrace();
                 }
 
